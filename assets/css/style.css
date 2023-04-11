@@ -134,7 +134,7 @@ main .menu_wrapper .bottom .food_title p {
 
 main .menu_wrapper .bottom .food_title h6 {
   font-size: 15px;
-  color: var(--primarycolor);
+  color: rgb(166, 167, 167);
   font-family: "Lexend", sans-serif;
 }
 
