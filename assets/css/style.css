@@ -207,7 +207,7 @@ main .menu_wrapper .bottom .food_title h6 {
 .nav_menu nav {
   position: absolute;
   top: 15%;
-  left: 47%;
+  left: 45%;
   transform: translateX(-50%);
 }
 
@@ -218,4 +218,5 @@ main .menu_wrapper .bottom .food_title h6 {
   gap: 10px;
   font-size: 25px;
   width: 100%;
+  font-family: var(--primaryfont);
 }
