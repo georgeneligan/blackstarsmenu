@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.active {
+  border-bottom: 2px solid rgb(88, 88, 88);
+}
+.color {
+  color: rgb(88, 88, 88) !important;
+}
+:root {
+  --primarycolor: rgb(88, 88, 88);
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #dad427f8;
+  position: fixed;
+  top: 0;
+}
+header section {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+header section .left img {
+  width: 90px;
+}
+
+header section .middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header section .middle div {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header section .middle div a {
+  text-decoration: none;
+  color: rgb(133, 133, 133);
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+}
+
+header section .middle div img {
+  width: 30px;
+  height: 20px;
+}
+
+header section .right div {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+header section .right div i {
+  font-size: 30px;
+  color: rgb(88, 88, 88);
+}
+
+main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  margin-top: 20px;
+}
+main .menu_title_wrapper {
+  margin-top: 120px;
+}
+main .menu_title_wrapper,
+main .menu_wrapper {
+  width: 90%;
+}
+
+main .menu_title_wrapper h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primarycolor);
+  margin-bottom: 55px;
+}
+main .menu_wrapper {
+  box-shadow: 0px 0px 18px 5px rgb(0, 0, 0);
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+
+main .menu_wrapper .top img {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  object-fit: cover;
+  height: 200px;
+}
+main .menu_wrapper .bottom .bottom_top {
+  margin: 0 auto;
+  width: 95%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+main .menu_wrapper .bottom div img {
+  width: 50px;
+  margin-top: 10px;
+}
+
+main .menu_wrapper .bottom .food_title p,
+main .menu_wrapper .bottom .food_title h6 {
+  margin: 0px;
+  margin-bottom: 5px;
+}
+
+main .menu_wrapper .bottom .food_title p {
+  font-size: 25px;
+}
+
+main .menu_wrapper .bottom .food_title h6 {
+  font-size: 15px;
+  color: var(--primarycolor);
+  font-family: "Lexend", sans-serif;
+}
+
+.bottom_bottom {
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bottom_bottom .rating i {
+  color: rgb(255, 179, 0);
+}
+
+.bottom_bottom .rating .rating_color {
+  color: var(--primarycolor) !important;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.bottom_bottom .food_time .food_time_color {
+  color: var(--primarycolor) !important;
+  font-family: "Lexend", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.fa-clock {
+  color: var(--primarycolor);
+}
+
+.food_price p {
+  color: var(--primarycolor);
+  font-size: 20px;
+  font-family: "Lexend", sans-serif;
+}
+
+.food_price p span {
+  color: green;
+  font-weight: 700;
+}
