@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(100%);
+}
 .active {
   border-bottom: 2px solid #e2d332;
 }
@@ -72,6 +77,8 @@ header section .right div i {
   background: -webkit-linear-gradient(rgb(38, 141, 214), rgb(237, 249, 67));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  position: absolute;
+  z-index: 200;
 }
 
 main {
@@ -181,4 +188,34 @@ main .menu_wrapper .bottom .food_title h6 {
 .food_price p span {
   color: green;
   font-weight: 700;
+}
+
+.nav_menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh !important;
+  width: 50% !important;
+  border: solid 1px black;
+  background-color: rgba(0, 0, 0, 0.795);
+  color: #4a9ae9;
+  z-index: 2;
+  transition: 1s;
+  visibility: visible;
+}
+
+.nav_menu nav {
+  position: absolute;
+  top: 15%;
+  left: 47%;
+  transform: translateX(-50%);
+}
+
+.nav_menu nav ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  font-size: 25px;
+  width: 100%;
 }
