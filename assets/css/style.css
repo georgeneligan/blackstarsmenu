@@ -8,11 +8,12 @@
 .hiddenmenu {
   display: none !important;
 }
+
 .active {
   border-bottom: 2px solid #e2d332;
 }
 .activemenu {
-  color: #e2d332;
+  color: #e2d332 !important;
   transform: scale(1.03);
   transition: 0.4s;
 }
@@ -233,9 +234,15 @@ main .menu_container {
   display: grid;
   grid-template-columns: 1fr;
   gap: 10px;
-  font-size: 25px;
+  font-size: 21px;
   width: 100%;
   font-family: var(--primaryfont);
+  color: #4a9ae9;
+}
+
+.nav_menu nav ul li a {
+  text-decoration: none;
+  color: #4a9ae9;
 }
 
 footer {
