@@ -5,8 +5,16 @@
   opacity: 0;
   transform: translateX(100%);
 }
+.hiddenmenu {
+  display: none !important;
+}
 .active {
   border-bottom: 2px solid #e2d332;
+}
+.activemenu {
+  color: #e2d332;
+  transform: scale(1.03);
+  transition: 0.4s;
 }
 .color {
   color: #e2d332 !important;
@@ -47,7 +55,7 @@ header section .middle {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
 }
 header section .middle div {
   height: fit-content;
@@ -103,6 +111,7 @@ main .menu_title_wrapper h1 {
   color: var(--primarycolor);
   margin-bottom: 55px;
   font-family: var(--primaryfont);
+  font-size: 25px;
 }
 main .menu_wrapper {
   box-shadow: 0px 0px 18px 5px rgb(0, 0, 0);
@@ -114,7 +123,6 @@ main .menu_wrapper .top img {
   width: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
   border-radius: 20px;
   object-fit: cover;
   height: 200px;
@@ -139,7 +147,8 @@ main .menu_wrapper .bottom .food_title h6 {
 }
 
 main .menu_wrapper .bottom .food_title p {
-  font-size: 25px;
+  font-size: 21px;
+  font-weight: 700;
   font-family: var(--primaryfont);
 }
 
@@ -147,6 +156,13 @@ main .menu_wrapper .bottom .food_title h6 {
   font-size: 15px;
   color: rgb(166, 167, 167);
   font-family: var(--primaryfont);
+}
+main .menu_container {
+  margin: 0 auto;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
 }
 
 .bottom_bottom {
@@ -209,6 +225,7 @@ main .menu_wrapper .bottom .food_title h6 {
   top: 15%;
   left: 45%;
   transform: translateX(-50%);
+  width: 100%;
 }
 
 .nav_menu nav ul {
@@ -219,4 +236,52 @@ main .menu_wrapper .bottom .food_title h6 {
   font-size: 25px;
   width: 100%;
   font-family: var(--primaryfont);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  border: solid 1px black;
+  background-color: rgba(0, 0, 0, 0.922);
+}
+
+footer div {
+  display: grid;
+  grid-template-columns: 1fr;
+  place-items: center;
+  color: white;
+  font-family: var(--primaryfont);
+  text-align: center;
+  color: #4a9ae9;
+}
+footer .footer_wrapper h4 {
+  font-size: 18px;
+  margin: 0px;
+}
+
+footer .footer_wrapper p {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 400;
+}
+footer .footer_wrapper p a {
+  color: #e2d332;
+  text-decoration: none;
+  border-bottom: 2px solid #e2d332;
+  line-height: 20px;
+}
+.footer_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.footer_img {
+  width: 55px;
 }
