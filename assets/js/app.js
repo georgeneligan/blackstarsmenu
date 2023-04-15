@@ -20,6 +20,7 @@ let cold_drinks_btn = document.querySelector(".colddrinks-btn");
 let alcohol_btn = document.querySelector(".alcohol-btn");
 
 salat_btn.addEventListener("click", () => {
+  coming_soon.classList.add("hiddenmenu");
   coldfood.classList.add("hiddenmenu");
   hot_food.classList.add("hiddenmenu");
   bakedgoods.classList.add("hiddenmenu");
@@ -41,6 +42,7 @@ salat_btn.addEventListener("click", () => {
 });
 
 cold_food_btn.addEventListener("click", () => {
+  coming_soon.classList.add("hiddenmenu");
   salat.classList.add("hiddenmenu");
   coldfood.classList.remove("hiddenmenu");
   bakedgoods.classList.add("hiddenmenu");
@@ -61,6 +63,7 @@ cold_food_btn.addEventListener("click", () => {
   menu_icon.classList.toggle("fa-xmark");
 });
 hot_food_btn.addEventListener("click", () => {
+  coming_soon.classList.add("hiddenmenu");
   salat.classList.add("hiddenmenu");
   coldfood.classList.add("hiddenmenu");
   bakedgoods.classList.add("hiddenmenu");
@@ -82,6 +85,7 @@ hot_food_btn.addEventListener("click", () => {
 });
 
 bakedgoods_btn.addEventListener("click", () => {
+  coming_soon.classList.add("hiddenmenu");
   salat.classList.add("hiddenmenu");
   coldfood.classList.add("hiddenmenu");
   hot_food.classList.add("hiddenmenu");
